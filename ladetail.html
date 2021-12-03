@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+<style>
+    .bottoneVirus{
+          width: 100px;
+          height: 100px;
+          margin: 3px;
+
+    }
+.buttonRosso{
+    background-color: rgb(211, 41, 41);
+}
+.buttonVerde{
+    background-color: rgb(12, 161, 37);
+}
+    buttonBlu{
+    background-color: rgb(241, 23, 231);
+}
+
+buttonGiallo{
+    background-color: rgb(191, 221, 56);
+}
+buttonArancione{
+    background-color: rgb(233, 140, 34);
+}
+
+
+
+
+
+
+}
+</style>
+</head>
+<body>
+<script>
+// il malware è un virus che genera un malfunzionamento
+// solitamente bloccante ma non ha caratteristiche di replicazione
+// come altri virus
+var myVar;
+function start() {
+  myVar = setInterval(malware, 3000);
+}
+function malware(){
+alert("ahahahahaha");
+
+}
+function stop() {
+  clearInterval(myVar);
+}
+
+
+
+</script>
+ <p> Malware</p>
+<button class="bottoneVirus buttonRosso" onclick="start()">Virus 1.0beta Cattivo</button>
+<button class="bottoneVirus buttonVerde" onclick="malware()">Virus 1.1beta Buono</button>
+<button class="bottoneVirus  buttonArancione" onclick="start()">Virus 1.3beta Cattivissimo</button>
+<button class="bottoneVirus buttonGiallo" onclick="malware()">Virus 1.4beta Buonissimo</button>
+<button class="bottoneVirus buttonBlue" onclick="stop()">stop</button>
+
+</body>
+</html>
+
+
+
+<body>
+
+
+
+<script>
+function myFunction() {
+  alert("Hello\nHow are you?");
+}
+</script>
+
+
+</body>
+</html>
