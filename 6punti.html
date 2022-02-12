@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #es1{
+
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        background-color: grey;
+        }
+    
+        #box{ 
+        width: 30px;
+        height : 30px;
+        background-color: rgb(255, 19, 19);
+        border-radius: 50%; 
+        margin: 240px;
+        right:50%;
+        float: left;
+        position: absolute;
+            }
+
+</style>
+
+</head>
+<body>
+    
+    <p id="demo"></p>
+
+    <div id="es1">
+       <input type="text">
+       <button onclick="lancio(10)">lancio</button>
+       <p id="outes1">.....</p>
+       <div id="box">
+
+    <script>
+        function lancio() {
+let dado=0;
+dado=Math.round((Math.random()*9)+1);
+document.getElementById("outes1").innerHTML=dado+ " ";
+if(dado>4){
+document.getElementById("box").style.backgroundColor="red";}
+if(dado<4){
+document.getElementById("box").style.backgroundColor="white";}
+return dado;
+
+}
+
+       
+    </script>
+     
+</body>
+</html>
