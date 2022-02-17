@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
-    #es1{
-
+        #es1{
         height: 200px;
         width: 200px;
         border: 1px solid black;
@@ -21,33 +20,53 @@
         border-radius: 50%; 
         margin: 240px;
         right:50%;
-        float: left;
-        position: absolute;
             }
+
+        
 
 </style>
 
 </head>
 <body>
-    
-    <p id="demo"></p>
+
 
     <div id="es1">
        <input type="text">
        <button onclick="lancio(10)">lancio</button>
        <p id="outes1">.....</p>
+       <p id="outes2">.....</p>
+       <p id="outes3">.....</p>
        <div id="box">
+       <div id="box2">
+       <div id="box3">
+    </div>
+
 
     <script>
-        function lancio() {
-let dado=0;
-dado=Math.round((Math.random()*9)+1);
-document.getElementById("outes1").innerHTML=dado+ " ";
-if(dado>4){
+        function lancio(numfacce) {
+dado=Math.round((Math.random()*(numfacce-1))+1);
+document.getElementById("outes1").innerHTML=document.getElementById("outes1").innerHTML=dado+"";
+
+dado2=Math.round((Math.random()*(numfacce-1))+1);
+document.getElementById("outes2").innerHTML=document.getElementById("outes2").innerHTML=dado2+"";
+
+dado3=Math.round((Math.random()*(numfacce-1))+1);
+document.getElementById("outes3").innerHTML=document.getElementById("outes3").innerHTML=dado3+"";
+
+if(dado>(numfacce/2)){
 document.getElementById("box").style.backgroundColor="red";}
-if(dado<4){
+if(dado<(numfacce/2)){
 document.getElementById("box").style.backgroundColor="white";}
-return dado;
+
+if(dado2>(numfacce/2)){
+document.getElementById("box2").style.backgroundColor="red";}
+if(dado2<(numfacce/2)){
+document.getElementById("box2").style.backgroundColor="white";}
+
+if(dado3>(numfacce/2)){
+document.getElementById("box3").style.backgroundColor="red";}
+if(dado3<(numfacce/2)){
+document.getElementById("box3").style.backgroundColor="white";}
 
 }
 
